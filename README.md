@@ -1,4 +1,4 @@
-# Demo Langing Page
+# fastn walkthrough: building landing page
 
 Video: https://www.youtube.com/watch?v=cldCaQ-P7E8
 
