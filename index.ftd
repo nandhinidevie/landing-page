@@ -1,40 +1,153 @@
--- ds.page: Welcome to doc-site
+-- import: fastn-community.github.io/design-system as ds
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- design-system.page-widths widths:
+regular.px: 1200
+narrow.px: 1000
+wide.px: 1400
 
 
--- ds.h3: 🎯 Used by?
+-- ds.page:
+widths: $widths
 
-Our all documentation sites uses this `doc-site` theme.
+-- header:
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- hero:
 
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- db-or-api:
 
 -- end: ds.page
+
+
+
+-- component db-or-api:
+
+-- ds.section-column:
+spacing: $ds.spaces.vertical-gap.medium
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.large
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9dd14ce920c12e0191e_postgres.svg
+width.fixed.px: 196
+
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9f325d99b3d6333bdbe_stripe.svg
+width.fixed.px: 90
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6400f9ebaeb0d581b82b9aee_hubspot.svg
+width.fixed.px: 151
+
+-- end: ds.row
+
+-- ds.copy-large:
+
+and any REST API.
+
+-- end: ds.section-column
+
+-- end: db-or-api
+
+
+-- component hero:
+
+
+-- ds.section-row:
+inset: $ds.spaces.inset-square.zero
+margin.px: $ds.spaces.vertical-gap.extra-large.gap
+
+-- ds.column:
+
+-- ds.heading-tiny: DROPBASE
+
+-- ds.heading-hero: Build internal tools with just Python
+
+-- ds.copy-regular:
+margin.px: $ds.spaces.vertical-gap.medium.gap
+
+**Developer-first.** Build fullstack web apps for your internal teams.
+Import existing Python scripts and quickly layer UIs and granular
+permissions on top.
+
+
+-- ds.row:
+align-content: left
+
+-- ds.button: Book demo
+
+-- ds.phosphor-icon-button: Documentation
+icon: caret-right
+link: /docs/
+
+
+-- end: ds.row
+
+-- end: ds.column
+
+
+-- ds.column:
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/651dce0aa7133cdfef4c9431_Dropbase%20Python.webp
+width: fill-container
+
+-- end: ds.column
+
+-- end: ds.section-row
+
+
+
+-- end: hero
+
+
+
+
+
+
+-- component header:
+
+-- ds.section-row:
+inset: $ds.spaces.inset-tall.zero-medium
+spacing: $ds.spaces.horizontal-gap.space-between
+
+-- ds.row:
+width: hug-content
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6125a1fa1160592fd373d33b_Dropbase%20logo%20website.svg
+width.fixed.px: 150
+
+-- ds.header-link: Docs
+link: /
+
+-- ds.header-link: Blog
+link: /
+
+-- ds.header-link: Pricing
+link: /
+
+-- ds.header-link: Contact
+link: /
+
+-- end: ds.row
+
+-- ds.row:
+width: hug-content
+
+-- ds.phosphor-icon-button: Search
+icon: magnifying-glass
+link: /search/
+
+-- ds.header-link: Log In
+link: /
+
+-- ds.button: Book demo
+
+-- end: ds.row
+
+-- end: ds.section-row
+
+-- end: header
