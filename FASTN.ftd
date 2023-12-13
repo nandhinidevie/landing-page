@@ -3,3 +3,5 @@
 -- fastn.package: dropbase
 
 -- fastn.dependency: fastn-community.github.io/design-system
+provided-via: fastn-community.github.io/design-system
+required-as: ds

@@ -1,14 +1,10 @@
--- import: fastn-community.github.io/design-system as ds
-
-
--- design-system.page-widths widths:
+-- ds.page-widths widths:
 regular.px: 1200
 narrow.px: 1000
 wide.px: 1400
 
 
 -- ds.page:
-widths: $widths
 
 -- header:
 
@@ -57,7 +53,7 @@ and any REST API.
 
 -- ds.section-row:
 inset: $ds.spaces.inset-square.zero
-margin.px: $ds.spaces.vertical-gap.extra-large.gap
+margin: $ds.spaces.vertical-gap.extra-large
 
 -- ds.column:
 
@@ -66,7 +62,7 @@ margin.px: $ds.spaces.vertical-gap.extra-large.gap
 -- ds.heading-hero: Build internal tools with just Python
 
 -- ds.copy-regular:
-margin.px: $ds.spaces.vertical-gap.medium.gap
+margin: $ds.spaces.vertical-gap.medium
 
 **Developer-first.** Build fullstack web apps for your internal teams.
 Import existing Python scripts and quickly layer UIs and granular
