@@ -24,24 +24,277 @@ widths: $widths
 
 -- sql:
 
+-- features:
+
+-- book-demo:
+
+-- footer:
 
 -- end: ds.page
 
 
 
 
-/- component box:
+
+
+-- component footer:
+
+-- ds.section-column:
+inner-background.solid: $ds.colors.background.step-1
+inset: $ds.spaces.inset-square.extra-large
+spacing: $ds.spaces.vertical-gap.extra-extra-large
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.large
+align-content: top-center
+
+-- ds.column:
+
+-- ftd.image: 
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6125a1fa1160592fd373d33b_Dropbase%20logo%20website.svg
+width.fixed.px: 200
+;; align-self: start
+
+-- ds.copy-regular:
+margin: $ds.spaces.vertical-gap.large
+
+The developer platform to build internal customer success apps.
+
+-- ds.footer-secondary-heading: Backed by
+
+-- ds.column:
+spacing: $ds.spaces.horizontal-gap.extra-extra-small
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334e9c7c49cd57891a61167_Gradient.svg
+width.fixed.px: 150
+
+-- ftd.image:
+src: https://assets-global.website-files.com/5f2c87246b17fcf662282594/6334ea24e5307cc2a91ef616_ycombinator-ar21%201.svg
+width.fixed.px: 115
+
+-- end: ds.column
+
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Apps
+
+-- ds.footer-link: Database Editors
+link: /
+
+-- ds.footer-link: Admin Panels
+link: /
+
+-- end:ds.column
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Product
+
+-- ds.footer-link: Request a demo
+link: /
+
+-- ds.footer-link: Pricing
+link: /
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Resources
+
+-- ds.footer-link: Docs
+link: /
+
+-- ds.footer-link: Local setup
+link: /
+
+-- ds.footer-link: Blog
+link: /
+
+-- ds.footer-link: Support
+link: /
+
+-- end: ds.column
+
+
+-- ds.column:
+inset: $ds.spaces.inset-tall.zero-small
+
+-- ds.footer-heading: Company
+
+-- ds.footer-link: Contact us
+link: /
+
+-- ds.footer-link: Security Center
+link: /
+
+-- ds.footer-link: Terms
+link: /
+
+-- ds.footer-link: Privacy
+link: /
+
+-- end: ds.column
+
+-- end: ds.row
+
+
+
+-- ds.row:
+spacing: $ds.spaces.horizontal-gap.space-between
+
+-- ds.copyright-text: © Copyright 2023 - Dropbase • All rights reserved.
+
+-- ds.copyright-text: San Francisco
+
+-- ds.row:
+width: hug-content
+
+-- ds.phosphor-icon-button: 
+icon: twitter-logo
+link: /
+
+-- ds.phosphor-icon-button:
+icon: linkedin-logo
+link: /
+
+-- ds.phosphor-icon-button:
+icon: instagram-logo
+link: /
+
+-- end: ds.row
+
+
+-- end: ds.row
+
+-- end: ds.section-column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component book-demo:
+
+-- ds.section-column:
+inner-background.solid: $ds.colors.background.step-1
+inset: $ds.spaces.inset-wide.medium
+
+-- ds.copy-large: 
+text-align: center
+
+Build apps for your customer success and ops teams today
+
+-- ds.button: Book Demo
+link: /
+
+-- end: ds.section-column
+
+-- end: book-demo
+
+
+
+
+
+
+
+
+
+-- component features:
 
 -- ds.section-row:
+spacing: $ds.spaces.vertical-gap.large
+flush: full
+wrap: true
 
-;; -- ds.container:
-;; width: fill-container
+-- feature: Dropbase Studio.
 
-/-- end: ds.section-row
+Write, debug, and preview your apps in one place
 
-/-- end: box
+-- feature:  UI Components.
+
+Select UI components from a dropdown
+
+-- feature:  All Python.
+
+Write any function in Python. Get full code flexibility
+
+-- feature:  Code completion.
+
+Built-in Python LSP to speed up development
+
+-- feature:  Smart Tables.
+
+Turn any SQL into an inline editable tables
+
+-- feature:  Instant deploys.
+
+Apps automatically deployed as you build them
+
+-- feature:  Synced state.
+
+Client-server share state. No need to write React
+
+-- feature:  Python libraries.
+
+Access libraries such as numpy and pandas
+
+-- feature:  Integrations.
+
+Connect Postgres or any internal or external REST API
+
+-- end: ds.section-row
+
+-- end: features
 
 
+
+
+
+
+
+
+
+
+-- component feature:
+caption title:
+body description:
+
+-- ds.container:
+inset: $ds.spaces.inset-square.large
+background.solid: $ds.colors.background.step-1
+width.fixed.percent: 30
+radius: $ds.radius.large
+
+-- ds.heading-small: $with-space(a = $feature.title)
+color: $ds.colors.text-strong
+
+
+-- ds.heading-small: $feature.description
+color: $ds.colors.text
+
+-- end: ds.container
+
+-- end: feature
 
 
 
@@ -52,7 +305,7 @@ widths: $widths
 
 -- ds.section-column:
 margin: $ds.spaces.vertical-gap.extra-large
-inset: $ds.spaces.inset-wide.large
+inset: $ds.spaces.inset-wide.medium
 
 -- ds.heading-hero: Turn any SQL SELECT into an admin panel with Smart Tables.
 text-align: center
@@ -64,7 +317,9 @@ Convert any SQL select statement into an admin panel that lets you search and ed
 
 -- ftd.video:
 src: https://cf-simple-s3-origin-cloudfrontfors3-355320424519.s3.amazonaws.com/dropbase-website-assets/Admin+Panel.mp4
-width.fixed.px: 1000
+width.fixed.percent: 90
+autoplay: true
+loop: true 
 
 -- end: ds.section-column
 
@@ -247,6 +502,7 @@ width: fill-container
 -- ds.section-column:
 spacing: $ds.spaces.vertical-gap.medium
 margin: $ds.spaces.vertical-gap.extra-large
+inner-background.solid: $ds.colors.background.step-1
 
 -- ds.row:
 spacing: $ds.spaces.horizontal-gap.large
@@ -388,4 +644,12 @@ link: /
 -- end: ds.section-row
 
 -- end: header
+
+
+
+
+-- string with-space(a):
+string a:
+
+a + " "
 
